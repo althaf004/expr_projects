@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "name": "PG_INFO",
+      "path": "github.com/wmfs/pg-info"
+    },
+    {
+      "name": "pg_diff",
+      "path": "github.com/wmfs/pg-diff-sync"
+    },
+{
+      "name": "experimental,
+      "path": "github.com/althaf004/expr_projects"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      
+    ]
+  },
+  "settings": {
+    "git.autofetch": true,
+    "terminal.integrated.fontFamily": "CascadianCode NF",
+    "files.associations": {
+      ".rfignore": "ignore",
+      ".envrc.example": "dotenv"
+    },
+    "open.fileMappings": [],
+    "open.uriMappings": [],
+    "rest-client.previewOption": "exchange"
+   
+  }
+}
