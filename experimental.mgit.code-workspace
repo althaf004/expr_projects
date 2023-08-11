@@ -8,9 +8,20 @@
       "name": "pg_diff",
       "path": "github.com/wmfs/pg-diff-sync"
     },
-{
+    {
       "name": "experimental",
       "path": "github.com/althaf004/expr_projects"
+    },{
+      "name": "node-pg-migrate",
+      "path": "github.com/salsita/node-pg-migrate"
+    },
+    {
+      "name": "SQL-Aide-Forked",
+      "path": "github.com/althaf004/sql-aide"
+    },
+    {
+      "name": "Local",
+      "path": "github.com/althaf004/pg_diff"
     }
   ],
   "extensions": {
