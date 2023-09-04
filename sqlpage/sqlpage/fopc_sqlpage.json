@@ -1,0 +1,8 @@
+{
+    "database_url": "postgres://postgres:uO1YE4eK7yK3wT@10.10.10.171:6798/pgdcp_lib",
+    "max_database_pool_connections": 25,
+    "database_connection_idle_timeout_seconds": 60,
+    "database_connection_max_lifetime_seconds": 3600,
+    "sqlite_extensions": [],
+    "port": 8080
+  }

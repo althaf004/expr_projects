@@ -1,5 +1,9 @@
 {
-  "folders": [
+  "folders": [    
+    {
+      "name": "FOPC",
+      "path": "git.netspective.io/netspective-foc3/command-center-prime"
+    },
     {
       "name": "PG_INFO",
       "path": "github.com/wmfs/pg-info"
@@ -22,6 +26,10 @@
     {
       "name": "Local",
       "path": "github.com/althaf004/pg_diff"
+    },
+    {
+      "name": "Gitlab Diff",
+      "path": "git.netspective.io/netspective-labs/pg-json-diff"
     }
   ],
   "extensions": {

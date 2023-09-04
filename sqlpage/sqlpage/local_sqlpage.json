@@ -1,0 +1,8 @@
+{
+  "database_url": "postgres://postgres:citrus123@10.10.11.249:5432/pgdcp_prime_althaf",
+  "max_database_pool_connections": 25,
+  "database_connection_idle_timeout_seconds": 60,
+  "database_connection_max_lifetime_seconds": 3600,
+  "sqlite_extensions": [],
+  "port": 8080
+}
