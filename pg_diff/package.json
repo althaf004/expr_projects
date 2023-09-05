@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ 
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wmfs/pg-info": "^1.20.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "js-struct-compare": "^1.1.0",
+    "json-difference": "^1.15.7",
+    "node": "^20.4.0",
+    "pg": "^8.11.1",
+    "pg-diff-sync": "^0.0.11",
+    "pg-info": "^0.0.16"
+  }
+}

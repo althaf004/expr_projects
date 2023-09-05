@@ -29,7 +29,7 @@ SELECT clientname as title,
        enddate,
        statuss    
 FROM stateless_lib_support_and_notifications.daily_sqlpage 
- where   startdate = CAST($Date AS DATE) AND (CAST($Date AS DATE) + INTERVAL '1 day');
+ where   startdate = CAST($Date AS DATE) ;
 
 
 

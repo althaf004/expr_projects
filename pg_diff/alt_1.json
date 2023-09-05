@@ -1,0 +1,1 @@
+{"database" : {"host" : "*", "port" : "5432", "database_name" : "pgdcp_prime_althaf", "schemas" : { "public" : {"tables" : null, "views" : null} }}}

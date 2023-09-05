@@ -1,0 +1,1892 @@
+[
+  {
+    "path": [
+      "database",
+      "database_name"
+    ],
+    "type": "changed",
+    "left_value": "pgdcp_prime_althaf4",
+    "right_value": "pgdcp_prime_althaf2"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "company",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "person",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons1",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers",
+      "rules",
+      "RI_ConstraintTrigger_a_3713513"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "event": "9",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3713513\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3713513\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers",
+      "rules",
+      "RI_ConstraintTrigger_a_3713514"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "event": "17",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3713514\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3713514\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers",
+      "rules",
+      "RI_ConstraintTrigger_a_3576816"
+    ],
+    "type": "added",
+    "right_value": {
+      "event": "9",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576816\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576816\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers",
+      "rules",
+      "RI_ConstraintTrigger_a_3576817"
+    ],
+    "type": "added",
+    "right_value": {
+      "event": "17",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576817\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576817\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "orders",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "orders",
+      "rules",
+      "RI_ConstraintTrigger_c_3713515"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "event": "5",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3713515\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3713515\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "orders",
+      "rules",
+      "RI_ConstraintTrigger_c_3713516"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "event": "17",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3713516\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3713516\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "orders",
+      "rules",
+      "RI_ConstraintTrigger_c_3576818"
+    ],
+    "type": "added",
+    "right_value": {
+      "event": "5",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576818\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576818\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "orders",
+      "rules",
+      "RI_ConstraintTrigger_c_3576819"
+    ],
+    "type": "added",
+    "right_value": {
+      "event": "17",
+      "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576819\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+      "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576819\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "pgmigrations"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "columns": {
+        "id": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": "nextval('public.pgmigrations_id_seq'::regclass)"
+        },
+        "name": {
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "character_maximum_length": 255,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "run_on": {
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        }
+      },
+      "indexes": null,
+      "constraints": {
+        "pgmigrations_pkey": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "id"
+          ],
+          "columns": "PRIMARY KEY (id)"
+        }
+      },
+      "table_comments": {
+        "comment": null
+      },
+      "foreign_keys": null,
+      "triggers": null,
+      "sequences": {
+        "pgmigrations_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "users_id_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "posts_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        }
+      },
+      "rules": null,
+      "table_partitions": null,
+      "table_statistics": {
+        "pgmigrations": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "users_id"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "columns": {
+        "id": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": "nextval('public.users_id_id_seq'::regclass)"
+        },
+        "name": {
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "character_maximum_length": 1000,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "createdAt": {
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": "CURRENT_TIMESTAMP"
+        }
+      },
+      "indexes": null,
+      "constraints": {
+        "users_id_pkey": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "id"
+          ],
+          "columns": "PRIMARY KEY (id)"
+        }
+      },
+      "table_comments": {
+        "comment": null
+      },
+      "foreign_keys": null,
+      "triggers": null,
+      "sequences": {
+        "pgmigrations_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "users_id_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "posts_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        }
+      },
+      "rules": {
+        "RI_ConstraintTrigger_a_3949315": {
+          "event": "9",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3949315\" AFTER DELETE ON public.users_id FROM public.posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_cascade_del\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3949315\" AFTER DELETE ON public.users_id FROM public.posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_cascade_del\"()"
+        },
+        "RI_ConstraintTrigger_a_3949316": {
+          "event": "17",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3949316\" AFTER UPDATE ON public.users_id FROM public.posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3949316\" AFTER UPDATE ON public.users_id FROM public.posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+        }
+      },
+      "table_partitions": null,
+      "table_statistics": {
+        "users_id": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "posts"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "columns": {
+        "id": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": "nextval('public.posts_id_seq'::regclass)"
+        },
+        "userId": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        },
+        "body": {
+          "data_type": "text",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": "Details about the blog posts.",
+          "default_value": "'my value'::text"
+        },
+        "createdAt": {
+          "data_type": "timestamp without time zone",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": "CURRENT_TIMESTAMP"
+        }
+      },
+      "indexes": {
+        "posts_userId_index": {
+          "index_columns": [
+            "userId"
+          ],
+          "is_unique": false,
+          "is_primary": false
+        }
+      },
+      "constraints": {
+        "posts_pkey": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "id"
+          ],
+          "columns": "PRIMARY KEY (id)"
+        }
+      },
+      "table_comments": {
+        "comment": "The table for  blog posts."
+      },
+      "foreign_keys": {
+        "posts_userId_fkey": {
+          "constraint_type": "FOREIGN KEY",
+          "table_name": "posts",
+          "column": "userId",
+          "foreign_table": "users_id"
+        }
+      },
+      "triggers": null,
+      "sequences": {
+        "pgmigrations_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "users_id_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "posts_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        }
+      },
+      "rules": {
+        "RI_ConstraintTrigger_c_3949317": {
+          "event": "5",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3949317\" AFTER INSERT ON public.posts FROM public.users_id NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3949317\" AFTER INSERT ON public.posts FROM public.users_id NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+        },
+        "RI_ConstraintTrigger_c_3949318": {
+          "event": "17",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3949318\" AFTER UPDATE ON public.posts FROM public.users_id NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3949318\" AFTER UPDATE ON public.posts FROM public.users_id NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+        }
+      },
+      "table_partitions": null,
+      "table_statistics": {
+        "posts": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "users",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "users",
+      "rules"
+    ],
+    "type": "changed",
+    "left_value": {
+      "RI_ConstraintTrigger_a_4589566": {
+        "event": "9",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4589566\" AFTER DELETE ON public.users FROM public.blog_posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4589566\" AFTER DELETE ON public.users FROM public.blog_posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()"
+      },
+      "RI_ConstraintTrigger_a_4589567": {
+        "event": "17",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4589567\" AFTER UPDATE ON public.users FROM public.blog_posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4589567\" AFTER UPDATE ON public.users FROM public.blog_posts NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+      },
+      "RI_ConstraintTrigger_a_4616490": {
+        "event": "9",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4616490\" AFTER DELETE ON public.users FROM public.persons4_check NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4616490\" AFTER DELETE ON public.users FROM public.persons4_check NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()"
+      },
+      "RI_ConstraintTrigger_a_4616491": {
+        "event": "17",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4616491\" AFTER UPDATE ON public.users FROM public.persons4_check NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_4616491\" AFTER UPDATE ON public.users FROM public.persons4_check NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "_sqlx_migrations"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "columns": {
+        "version": {
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 64,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        },
+        "description": {
+          "data_type": "text",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "installed_on": {
+          "data_type": "timestamp with time zone",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": "now()"
+        },
+        "success": {
+          "data_type": "boolean",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "checksum": {
+          "data_type": "bytea",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "execution_time": {
+          "data_type": "bigint",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 64,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        }
+      },
+      "indexes": null,
+      "constraints": {
+        "_sqlx_migrations_pkey": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "version"
+          ],
+          "columns": "PRIMARY KEY (version)"
+        }
+      },
+      "table_comments": {
+        "comment": null
+      },
+      "foreign_keys": null,
+      "triggers": null,
+      "sequences": {
+        "pgmigrations_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "users_id_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "posts_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        }
+      },
+      "rules": null,
+      "table_partitions": null,
+      "table_statistics": {
+        "_sqlx_migrations": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "users_12"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "columns": {
+        "id": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        },
+        "name": {
+          "data_type": "text",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        }
+      },
+      "indexes": null,
+      "constraints": {
+        "users_12_pkey": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "id"
+          ],
+          "columns": "PRIMARY KEY (id)"
+        }
+      },
+      "table_comments": {
+        "comment": null
+      },
+      "foreign_keys": null,
+      "triggers": null,
+      "sequences": {
+        "pgmigrations_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "users_id_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        },
+        "posts_id_seq": {
+          "data_type": "integer",
+          "start_value": "1",
+          "minimum_value": "1",
+          "maximum_value": "2147483647",
+          "increment": "1",
+          "cycle_option": "NO"
+        }
+      },
+      "rules": null,
+      "table_partitions": null,
+      "table_statistics": {
+        "users_12": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "columns",
+      "id",
+      "data_type"
+    ],
+    "type": "changed",
+    "left_value": "bigint",
+    "right_value": "integer"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "columns",
+      "id",
+      "numeric_precision"
+    ],
+    "type": "changed",
+    "left_value": 64,
+    "right_value": 32
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "table_comments",
+      "comment"
+    ],
+    "type": "changed",
+    "left_value": null,
+    "right_value": "blogpost"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "foreign_keys"
+    ],
+    "type": "changed",
+    "left_value": {
+      "fk_author_id": {
+        "constraint_type": "FOREIGN KEY",
+        "table_name": "blog_posts",
+        "column": "author_id",
+        "foreign_table": "users"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "blog_posts",
+      "rules"
+    ],
+    "type": "changed",
+    "left_value": {
+      "RI_ConstraintTrigger_c_4589568": {
+        "event": "5",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4589568\" AFTER INSERT ON public.blog_posts FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4589568\" AFTER INSERT ON public.blog_posts FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+      },
+      "RI_ConstraintTrigger_c_4589569": {
+        "event": "17",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4589569\" AFTER UPDATE ON public.blog_posts FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4589569\" AFTER UPDATE ON public.blog_posts FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "age",
+      "data_type"
+    ],
+    "type": "changed",
+    "left_value": "bigint",
+    "right_value": "integer"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "age",
+      "numeric_precision"
+    ],
+    "type": "changed",
+    "left_value": 64,
+    "right_value": 32
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "age",
+      "default_value"
+    ],
+    "type": "changed",
+    "left_value": "0",
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "assest"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "ARRAY",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "dob"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "timestamp without time zone",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "dob_tz"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "dob_tz_n"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "timestamp without time zone",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "detail"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "text",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "col_seq"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0,
+      "column_comment": null,
+      "default_value": "nextval('public.pgmigrations_id_seq'::regclass)"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "weight"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "real",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": 24,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "height"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": 53,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "columns",
+      "moreinfor"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "jsonb",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "indexes"
+    ],
+    "type": "changed",
+    "left_value": {
+      "uq_persons3_weight_height": {
+        "index_columns": [
+          "weight",
+          "height"
+        ],
+        "is_unique": true,
+        "is_primary": false
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "constraints",
+      "pk_person3",
+      "constraint_column",
+      0
+    ],
+    "type": "changed",
+    "left_value": "id",
+    "right_value": "lastname"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "constraints",
+      "pk_person3",
+      "constraint_column",
+      1
+    ],
+    "type": "changed",
+    "left_value": "lastname",
+    "right_value": "id"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "constraints",
+      "uq_persons3_weight_height"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "constraint_type": "UNIQUE",
+      "constraint_column": [
+        "weight",
+        "height"
+      ],
+      "columns": "UNIQUE (weight, height)"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons3",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons4_check",
+      "columns",
+      "author_id"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0,
+      "column_comment": null,
+      "default_value": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons4_check",
+      "constraints",
+      "persons4_check_max_age_check"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "constraint_type": "CHECK",
+      "constraint_column": [
+        "age"
+      ],
+      "columns": "CHECK ((age <= 120))"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons4_check",
+      "foreign_keys"
+    ],
+    "type": "changed",
+    "left_value": {
+      "fk_author_id": {
+        "constraint_type": "FOREIGN KEY",
+        "table_name": "persons4_check",
+        "column": "author_id",
+        "foreign_table": "users"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons4_check",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons4_check",
+      "rules"
+    ],
+    "type": "changed",
+    "left_value": {
+      "RI_ConstraintTrigger_c_4616492": {
+        "event": "5",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4616492\" AFTER INSERT ON public.persons4_check FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4616492\" AFTER INSERT ON public.persons4_check FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+      },
+      "RI_ConstraintTrigger_c_4616493": {
+        "event": "17",
+        "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4616493\" AFTER UPDATE ON public.persons4_check FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+        "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_4616493\" AFTER UPDATE ON public.persons4_check FROM public.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons2",
+      "constraints",
+      "pk_person",
+      "constraint_column",
+      0
+    ],
+    "type": "changed",
+    "left_value": "lastname",
+    "right_value": "id"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons2",
+      "constraints",
+      "pk_person",
+      "constraint_column",
+      1
+    ],
+    "type": "changed",
+    "left_value": "id",
+    "right_value": "lastname"
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons2",
+      "constraints",
+      "pk_person2_age_limit_check"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "constraint_type": "CHECK",
+      "constraint_column": [
+        "age"
+      ],
+      "columns": "CHECK ((age > 18))"
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "persons2",
+      "sequences"
+    ],
+    "type": "changed",
+    "left_value": {
+      "pgmigrations_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "users_id_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      },
+      "posts_id_seq": {
+        "data_type": "integer",
+        "start_value": "1",
+        "minimum_value": "1",
+        "maximum_value": "2147483647",
+        "increment": "1",
+        "cycle_option": "NO"
+      }
+    },
+    "right_value": null
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "tables",
+      "customers_prefers3"
+    ],
+    "type": "added",
+    "right_value": {
+      "columns": {
+        "id": {
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        },
+        "pre_first_name": {
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "character_maximum_length": 255,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "pre_last_name": {
+          "data_type": "character varying",
+          "is_nullable": "NO",
+          "character_maximum_length": 255,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "pre_middle_name": {
+          "data_type": "character varying",
+          "is_nullable": "YES",
+          "character_maximum_length": null,
+          "numeric_precision": null,
+          "numeric_scale": null,
+          "column_comment": null,
+          "default_value": null
+        },
+        "age": {
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "character_maximum_length": null,
+          "numeric_precision": 32,
+          "numeric_scale": 0,
+          "column_comment": null,
+          "default_value": null
+        }
+      },
+      "indexes": null,
+      "constraints": {
+        "customers_pkeys3": {
+          "constraint_type": "PRIMARY KEY",
+          "constraint_column": [
+            "id"
+          ],
+          "columns": "PRIMARY KEY (id)"
+        }
+      },
+      "table_comments": {
+        "comment": null
+      },
+      "foreign_keys": null,
+      "triggers": null,
+      "sequences": null,
+      "rules": null,
+      "table_partitions": null,
+      "table_statistics": {
+        "customers_prefers3": {
+          "total_rows": 0,
+          "total_pages": 0
+        }
+      },
+      "extended_statistics": null,
+      "table_inheritance": null,
+      "collations": null,
+      "domains": null,
+      "user_defined_types": null,
+      "operators": null,
+      "operator_classes": null,
+      "operator_families": null,
+      "extension_objects": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "views",
+      "companyview"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "definition": " SELECT company.name,\n    company.city\n   FROM public.company;",
+      "columns": {
+        "name": {
+          "column_name": "name",
+          "data_type": "character varying",
+          "is_nullable": "YES"
+        },
+        "city": {
+          "column_name": "city",
+          "data_type": "character varying",
+          "is_nullable": "YES"
+        }
+      }
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "views",
+      "postsview"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "definition": " SELECT posts.\"userId\",\n    posts.body\n   FROM public.posts;",
+      "columns": {
+        "userId": {
+          "column_name": "userId",
+          "data_type": "integer",
+          "is_nullable": "YES"
+        },
+        "body": {
+          "column_name": "body",
+          "data_type": "text",
+          "is_nullable": "YES"
+        }
+      }
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "public",
+      "views",
+      "vw_users"
+    ],
+    "type": "added",
+    "right_value": {
+      "definition": " SELECT users.id,\n    users.name\n   FROM public.users;",
+      "columns": {
+        "id": {
+          "column_name": "id",
+          "data_type": "integer",
+          "is_nullable": "YES"
+        },
+        "name": {
+          "column_name": "name",
+          "data_type": "character varying",
+          "is_nullable": "YES"
+        }
+      }
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "test"
+    ],
+    "type": "deleted",
+    "left_value": {
+      "tables": null,
+      "views": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "stateless_integrations"
+    ],
+    "type": "added",
+    "right_value": {
+      "tables": null,
+      "views": null
+    }
+  },
+  {
+    "path": [
+      "database",
+      "schemas",
+      "news"
+    ],
+    "type": "added",
+    "right_value": {
+      "tables": null,
+      "views": null
+    }
+  }
+]

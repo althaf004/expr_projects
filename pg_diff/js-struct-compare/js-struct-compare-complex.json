@@ -1,0 +1,890 @@
+[
+    {
+      "path": [
+        "database",
+        "database_name"
+      ],
+      "type": "changed",
+      "left_value": "pgdcp_prime_althaf3",
+      "right_value": "pgdcp_prime_althaf2"
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "blog_posts",
+        "columns",
+        "body",
+        "data_type"
+      ],
+      "type": "changed",
+      "left_value": "character varying",
+      "right_value": "text"
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons4_check",
+        "constraints",
+        "persons4_check_pk"
+      ],
+      "type": "deleted",
+      "left_value": {
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column": [
+          "id"
+        ],
+        "columns": "PRIMARY KEY (id)"
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons4_check",
+        "constraints",
+        "persons4_check_age_check"
+      ],
+      "type": "added",
+      "right_value": {
+        "constraint_type": "CHECK",
+        "constraint_column": [
+          "age"
+        ],
+        "columns": "CHECK ((age >= 18))"
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "customers",
+        "rules"
+      ],
+      "type": "changed",
+      "left_value": null,
+      "right_value": {
+        "RI_ConstraintTrigger_a_3576816": {
+          "event": "9",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576816\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576816\" AFTER DELETE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_del\"()"
+        },
+        "RI_ConstraintTrigger_a_3576817": {
+          "event": "17",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576817\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_a_3576817\" AFTER UPDATE ON public.customers FROM public.orders NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_noaction_upd\"()"
+        }
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "orders",
+        "foreign_keys"
+      ],
+      "type": "changed",
+      "left_value": null,
+      "right_value": {
+        "customer_id_fk": {
+          "constraint_type": "FOREIGN KEY",
+          "table_name": "orders",
+          "column": "customer_id",
+          "foreign_table": "customers"
+        }
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "orders",
+        "rules"
+      ],
+      "type": "changed",
+      "left_value": null,
+      "right_value": {
+        "RI_ConstraintTrigger_c_3576818": {
+          "event": "5",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576818\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576818\" AFTER INSERT ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_ins\"()"
+        },
+        "RI_ConstraintTrigger_c_3576819": {
+          "event": "17",
+          "condition": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576819\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()",
+          "action": "CREATE CONSTRAINT TRIGGER \"RI_ConstraintTrigger_c_3576819\" AFTER UPDATE ON public.orders FROM public.customers NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \"RI_FKey_check_upd\"()"
+        }
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "company"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "name": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "address1": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "address2": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "city": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 30,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "company_pkey": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "id"
+            ],
+            "columns": "PRIMARY KEY (id)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "company": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "person"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "name": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "address1": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "address2": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "city": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 30,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "person_pkey": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "id"
+            ],
+            "columns": "PRIMARY KEY (id)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "person": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "users"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "name": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 100,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "users_pkey": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "id"
+            ],
+            "columns": "PRIMARY KEY (id)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "users": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "lastname": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "firstname": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "age": {
+            "data_type": "integer",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": {
+          "idx_pname": {
+            "index_columns": [
+              "lastname",
+              "firstname"
+            ],
+            "is_unique": false,
+            "is_primary": false
+          },
+          "persons_id_key": {
+            "index_columns": [
+              "id"
+            ],
+            "is_unique": true,
+            "is_primary": false
+          }
+        },
+        "constraints": {
+          "persons_id_key": {
+            "constraint_type": "UNIQUE",
+            "constraint_column": [
+              "id"
+            ],
+            "columns": "UNIQUE (id)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "persons": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons1"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "lastname": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 200,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "firstnames": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "age": {
+            "data_type": "integer",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "persons1_age_check": {
+            "constraint_type": "CHECK",
+            "constraint_column": [
+              "age"
+            ],
+            "columns": "CHECK ((age >= 18))"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "persons1": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons2"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "lastname": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "firstname": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "age": {
+            "data_type": "integer",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "pk_person": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "id",
+              "lastname"
+            ],
+            "columns": "PRIMARY KEY (id, lastname)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "persons2": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "persons3"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "lastname": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "firstname": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "age": {
+            "data_type": "integer",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "pk_person3": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "lastname",
+              "id"
+            ],
+            "columns": "PRIMARY KEY (id, lastname)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "persons3": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "tables",
+        "customers_prefers3"
+      ],
+      "type": "added",
+      "right_value": {
+        "columns": {
+          "id": {
+            "data_type": "integer",
+            "is_nullable": "NO",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          },
+          "pre_first_name": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "pre_last_name": {
+            "data_type": "character varying",
+            "is_nullable": "NO",
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "pre_middle_name": {
+            "data_type": "character varying",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "column_comment": null,
+            "default_value": null
+          },
+          "age": {
+            "data_type": "integer",
+            "is_nullable": "YES",
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "column_comment": null,
+            "default_value": null
+          }
+        },
+        "indexes": null,
+        "constraints": {
+          "customers_pkeys3": {
+            "constraint_type": "PRIMARY KEY",
+            "constraint_column": [
+              "id"
+            ],
+            "columns": "PRIMARY KEY (id)"
+          }
+        },
+        "table_comments": {
+          "comment": null
+        },
+        "foreign_keys": null,
+        "triggers": null,
+        "sequences": null,
+        "rules": null,
+        "table_partitions": null,
+        "table_statistics": {
+          "customers_prefers3": {
+            "total_rows": 0,
+            "total_pages": 0
+          }
+        },
+        "extended_statistics": null,
+        "table_inheritance": null,
+        "collations": null,
+        "domains": null,
+        "user_defined_types": null,
+        "operators": null,
+        "operator_classes": null,
+        "operator_families": null,
+        "extension_objects": null
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "public",
+        "views"
+      ],
+      "type": "changed",
+      "left_value": null,
+      "right_value": {
+        "vw_users": {
+          "definition": " SELECT users.id,\n    users.name\n   FROM public.users;",
+          "columns": {
+            "id": {
+              "column_name": "id",
+              "data_type": "integer",
+              "is_nullable": "YES"
+            },
+            "name": {
+              "column_name": "name",
+              "data_type": "character varying",
+              "is_nullable": "YES"
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "stateless_service_medigy_identity"
+      ],
+      "type": "added",
+      "right_value": {
+        "tables": null,
+        "views": {
+          "vw_users_identity": {
+            "definition": " SELECT users.id,\n    users.name\n   FROM public.users;",
+            "columns": {
+              "id": {
+                "column_name": "id",
+                "data_type": "integer",
+                "is_nullable": "YES"
+              },
+              "name": {
+                "column_name": "name",
+                "data_type": "character varying",
+                "is_nullable": "YES"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": [
+        "database",
+        "schemas",
+        "stateless_integrations"
+      ],
+      "type": "added",
+      "right_value": {
+        "tables": null,
+        "views": null
+      }
+    }
+  ]
